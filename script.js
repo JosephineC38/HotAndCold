@@ -10,8 +10,6 @@ logText = document.getElementById("log");
 console.log(actNum);
 
 
-
-
 function add(number) {
     if(guessNum + number <= 100) {
         guessNum += number;
