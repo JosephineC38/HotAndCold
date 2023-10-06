@@ -18,9 +18,6 @@ function add(number) {
 }
  
 
-
-
-
 function subtract(number) {
     if(guessNum - number >= 0) {
         guessNum -= number;
@@ -50,59 +47,37 @@ function commit() {
     } else if (guessLeft <= -5) {
         reset();
     }
-   
+
+ 
     if(actNum == guessNum) {
         resText.innerHTML = "Congrats! You got the number!";
-
-
-
 
     } else if ( (actNum - 5 <= guessNum && actNum > guessNum) ||  (actNum + 5 >= guessNum && actNum < guessNum) ) {
         resText.innerHTML = guessNum + " is very hot.";
 
-
-
-
     } else if ( (actNum - 6 <= guessNum && actNum >= guessNum - 8) ||  (actNum + 6 >= guessNum && actNum + 8 <= guessNum) ) {
         resText.innerHTML = guessNum + " is hot.";
-
-
-
 
     } else if ( (actNum - 9 <= guessNum && actNum >= guessNum - 15) ||  (actNum + 9 >= guessNum && actNum + 15 <= guessNum) ) {
         resText.innerHTML = guessNum + " is very warm.";
 
-
-
-
     } else if ( (actNum - 16 <= guessNum && actNum >= guessNum - 20) ||  (actNum + 16 >= guessNum && actNum + 20 <= guessNum) ) {
         resText.innerHTML = guessNum + " is warm.";
 
-
-
-
     } else if ( (actNum - 21 <= guessNum && actNum >= guessNum - 30) ||  (actNum + 21 >= guessNum && actNum + 30 <= guessNum) ) {
         resText.innerHTML = guessNum + " is cool.";
-
-
-
 
     } else if ( (actNum - 31 <= guessNum && actNum >= guessNum - 40) ||  (actNum + 31 >= guessNum && actNum + 40 <= guessNum) ) {
         resText.innerHTML = guessNum + " is very cool.";
     }
 
-
-
-
     else if ( (actNum - 41 <= guessNum && actNum >= guessNum - 55) ||  (actNum + 41 >= guessNum && actNum + 55 <= guessNum) ) {
         resText.innerHTML = guessNum + " is cold.";
     }
 
-
     else if ( (actNum - 56 >= guessNum) ||  (actNum + 56 <= guessNum) ) {
         resText.innerHTML = guessNum + " is very cold.";
     }
-
 
     logText.innerHTML += resText.innerHTML + "<br/> <br/>";
 
