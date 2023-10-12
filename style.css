@@ -4,15 +4,27 @@
     cursor: pointer;
 }
 
-
 .subtract {
     background-color: aqua;
     padding: 10px 10px;
     cursor: pointer;
-
-
 }
 
+#commit {
+    background-color: aqua;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+
+#reset {
+    background-color: rgba(233, 51, 51, 0.86);
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+
 body {
-    background-color: rgb(193, 184, 175);
-    }
+    background-color:powderblue;
+    text-align: center;
+}
